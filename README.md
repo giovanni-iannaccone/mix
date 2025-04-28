@@ -54,7 +54,7 @@ target_link_libraries(myproject mix)
 
 ### Include `mix` in your project
 ```cpp
-#include <argparse/argparse.hpp>
+#include <mix/mix.hpp>
 ```
 
 ### Usage Example
@@ -82,15 +82,14 @@ int main() {
 }
 ```
 
-## 🧩 Contributing
-
+# 🧩 Contributing
 We welcome contributions! Please follow these steps:
 
-    Fork the repository.
-    Create a new branch ( using this convention).
-    Make your changes and commit them with descriptive messages.
-    Push your changes to your fork.
-    Create a pull request to the main repository.
+1. Fork the repository.
+2. Create a new branch ( using <a href="https://medium.com/@abhay.pixolo/naming-conventions-for-git-branches-a-cheatsheet-8549feca2534">this</a> convention).
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your fork.
+5. Create a pull request to the main repository.
 
 ### 🍃 Contributors
 <a href="https://github.com/giovanni-iannaccone/mix/graphs/contributors">
@@ -101,5 +100,6 @@ We welcome contributions! Please follow these steps:
 This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
 
 ## ⚔ Contact
-For any inquiries or support, please contact iannacconegiovanni444@gmail.com .
-Visit my site for more informations about me and my work https://giovanni-iannaccone.github.io
+- For any inquiries or support, please contact <a href="mailto:iannacconegiovanni444@gmail.com"> iannacconegiovanni444@gmail.com </a>.
+- Visit my site for more informations about me and my work <a href="https://giovanni-iannaccone.gith
+ub.io" target=”_blank” rel="noopener noreferrer"> https://giovanni-iannaccone.github.io </a>
