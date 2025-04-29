@@ -1,6 +1,5 @@
 #pragma once
 
-#include <iostream>
 #include <vector>
 
 class mix {
@@ -52,6 +51,10 @@ public:
         return *static_cast<T *>(this->ptrs.at(index));
     }
 
+    auto back() -> void* {
+        return this->ptrs.back();
+    }
+
     auto begin() -> std::vector<void *>::iterator {
         return this->ptrs.begin();
     }
@@ -70,7 +73,7 @@ public:
 
     auto erase(int index = -1) -> void {
         if (index < 0 || index > this->ptrs.size())
-            index = this->ptrs.size();
+            index = this->ptrs.size() - 1;
 
         this->ptrs.erase(this->ptrs.begin() + index);
     }
@@ -112,4 +115,6 @@ public:
     auto size() -> size_t {
         return this->ptrs.size();
     }
+
+
 };

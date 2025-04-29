@@ -9,7 +9,7 @@ The class uses a vector of pointers (`std::vector<void*>`) as its base structure
 
 ## 🚀 Key Features
 - **Operators**:
-  - `[]`: Accesses the pointer to an element (equivalent to `&container.get<void>()`)
+  - `[]`: Accesses the pointer to an element (equivalent to `&container.at<void>()`)
   - `+=`: Adds elements from another mix container to the current one
   - `==`: Compares two `mix` objects
   - `!=`: Checks inequality between two `mix` objects
@@ -20,14 +20,15 @@ The class uses a vector of pointers (`std::vector<void*>`) as its base structure
 
 - **Insertion and Removal**:
   - `erase(int index)`: Erases the element at the given position
-  - `find(T const element)`: Finds the index of a specific element (functionality pending)
+  - `find(T const element)`: Finds the index of a specific element
   - `insert(T element, int index = -1)`: Inserts an element of a generic type at the specified position
   - `pop_back()`: Removes the last element in the container
   - `push_back(T element)`: Appends an element to the container
-  - `remove(T const element)`: Removes a specific element (functionality to be completed)
+  - `remove(T const element)`: Removes a specific element
 
 - **Container Management**:
   - `size()`: Returns the total number of elements
+  - `back() `: Returns a reference to the vector's last element
   - `capacity()`: Provides the internal vector's capacity
   - `clear()`: Removes all elements from the container
   - Iterators: `begin()` and `end()` for seamless iteration
