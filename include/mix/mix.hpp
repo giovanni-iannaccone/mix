@@ -10,6 +10,9 @@ protected:
 public:
 
     ~mix() {
+        for (auto ptr: this->ptrs) 
+            ::operator delete(ptr);
+        
         this->ptrs.clear();
     }
 
@@ -39,7 +42,7 @@ public:
         return false;
     }
 
-    auto operator+=(mix const &obj) -> mix {
+    auto operator+=(mix const &obj) -> mix& {
         for (void *ptr: obj.ptrs)
             this->ptrs.push_back(ptr);
         
